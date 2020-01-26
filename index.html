@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fly!</title>
+		<script>
+			function change(){
+				var x = document.getElementById("bb");
+				if(x.background == "obi2.gif")
+				{
+					x.background = "obi.gif";
+				}else
+				{
+					x.background = "obi2.gif";
+				}
+			};
+
+			window.onload = function() {setInterval(change, 7000);};
+
+		</script>
+	</head>
+
+	<body id ="bb" background="obi2.gif">
+		<center>
+			<div style="border:solid black;background-color:whitesmoke;opacity: 0.7;border-radius: 25px;width: 300px">
+				<center>
+					<h1>Fly with Obi
+					</h1>
+				</center>
+			</div>
+		</center>
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="/__/firebase/7.7.0/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+			 https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="/__/firebase/7.7.0/firebase-analytics.js"></script>
+
+		<!-- Initialize Firebase -->
+		<script src="/__/firebase/init.js"></script>
+	</body>
+</html>
